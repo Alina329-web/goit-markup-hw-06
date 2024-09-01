@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Homework#2" />
-    <title>Homework#4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework#6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,11 +67,15 @@
       </div>
       <div class="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-closse">close</button>
+          <button class="mobile-menu-closse">
+            <svg class="mobil-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-x-close"></use>
+            </svg>
+          </button>
           <nav class="mobile-menu-nav">
             <ul class="mobile-meny">
               <li class="mobile-meny-item">
-                <a class="mobil-meny-link current" href="./index.html"
+                <a class="mobile-meny-link current" href="./index.html"
                   >Studio</a
                 >
               </li>
@@ -83,7 +87,7 @@
               </li>
             </ul>
           </nav>
-          <adres>
+          <adres class="mobile-adres">
             <ul class="mobile-contact">
               <li class="mobile-contact-item">
                 <a class="mobile-contact-link" href="mailto:info@devstudio.com"
@@ -97,28 +101,28 @@
               </li>
             </ul>
           </adres>
-          <ul class="soc-mob-icon">
-            <li class="soc-mob-item-icon">
-              <a class="soc-mob-icon-link" href="">
-                <svg class="soc-mob-icom-svg" width="16" height="16">
+          <ul class="mob-soc-icon">
+            <li class="mob-soc-item-icon">
+              <a class="mob-soc-icon-link" href="">
+                <svg class="mob-soc-icom-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
-            <li class="soc-mob-item-icon">
-              <a class="soc-mob-icon-link" href="">
-                <svg class="soc-mob-icom-svg" width="16" height="16">
+            <li class="mob-soc-item-icon">
+              <a class="mob-soc-icon-link" href="">
+                <svg class="mob-soc-icom-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
-            <li class="soc-mob-item-icon">
-              <a class="soc-mob-icon-link" href="">
-                <svg class="soc-mob-icom-svg" width="16" height="16">
+            <li class="mob-soc-item-icon">
+              <a class="mob-soc-icon-link" href="">
+                <svg class="mob-soc-icom-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="soc-mob-item-icon">
-              <a class="soc-mob-icon-link" href="">
-                <svg class="soc-mob-icom-svg" width="16" height="16">
+            <li class="mob-soc-item-icon">
+              <a class="mob-soc-icon-link" href="">
+                <svg class="mob-soc-icom-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
@@ -129,15 +133,15 @@
     <!--#endregion header -->
     <main>
       <!-- #region hero -->
-      <!-- <section class="section-hero">
+      <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion hero -->
       <!-- #region advantages -->
-      <!-- <section class="section-advantages">
+      <section class="section-advantages">
         <div class="container">
           <h2 class="advantages-title visually-hidden">Advantages</h2>
           <ul class="advantages-list">
@@ -191,10 +195,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion advantages -->
       <!-- #region Our Team -->
-      <!-- <section class="section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -203,7 +207,7 @@
                 class="team-photo"
                 srcset="
                   ./images/mark_guerrero.jpg 1x,
-                  ./images/mark_guerrero_2x  2x
+                  ./images/mark_guero_2x.jpg 2x
                 "
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
@@ -247,7 +251,7 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                srcset="./images/tom_ford.jpg 1x, ./images/tom_ford2x 2x"
+                srcset="./images/tom_ford.jpg 1x, ./images/tom_ford2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -290,8 +294,8 @@
               <img
                 class="team-photo"
                 srcset="
-                  ./images/camila_garcia.jpg 1x,
-                  ./images/camila_garcia2x   2x
+                  ./images/camila_garcia.jpg   1x,
+                  ./images/camila_garcia2x.jpg 2x
                 "
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia"
@@ -335,8 +339,8 @@
               <img
                 class="team-photo"
                 srcset="
-                  ./images/daniel_wilson.jpg 1x,
-                  ./images/daniel_wilson2x   2x
+                  ./images/daniel_wilson.jpg   1x,
+                  ./images/daniel_wilson2x.jpg 2x
                 "
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson"
@@ -378,10 +382,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--  #endregion Our Team -->
       <!-- #region Portfolio -->
-      <!-- <section class="section-portfolio">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -648,10 +652,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion Portfolio -->
     </main>
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container container-footer">
         <div class="footer-blok">
           <a class="logo footer-logo" href="./index.html"
@@ -662,7 +666,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-social-сontainer">
+        <div class="footer-social-container">
           <p class="footer-text-social">Social media</p>
           <ul class="footer-soc-icon">
             <li class="soc-item-icon-footer">
@@ -714,7 +718,7 @@
           </form>
         </div>
       </div>
-    </footer>-->
+    </footer>
 
     <!--<div class="backdrop is-open">
       <div class="modal">
